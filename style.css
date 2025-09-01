@@ -1,0 +1,130 @@
+.space-grotesk {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-grayish: hsl(270, 3%, 87%);
+  --dark-grayish: hsl(279, 6%, 55%);
+  --very-dark-violet: hsl(278, 68%, 11%);
+}
+
+/* ::-webkit-inner-spin-button {
+   appearance: none;
+} */
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 127px;
+  background-image: url(./images/bg-main-desktop.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+fieldset {
+  margin-block-end: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 26px;
+}
+
+form * {
+  font-family: inherit;
+}
+
+fieldset label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--very-dark-violet);
+}
+
+::placeholder {
+  color: var(--very-dark-violet, #21092f);
+  font-size: 18px;
+  line-height: normal;
+  opacity: 0.25;
+  padding-inline-start: 16px;
+}
+
+input {
+   cursor: pointer;
+}
+
+/* input:focus {
+   outline: none;
+  border: 1px solid transparent;
+    background-image: linear-gradient(
+    white, white
+  ), linear-gradient(
+    90deg,
+    hsl(249, 99%, 64%),
+    hsl(278, 94%, 30%)
+  );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+} */
+
+.input-flx {
+  display: flex;
+  gap: 20px;
+}
+
+.date-input {
+  display: flex;
+  gap: 10px;
+}
+
+.input-large {
+  width: 381px;
+  height: 45px;
+  border-radius: 8px;
+  border: 1px solid var(--light-grayish);
+  background: var(--white);
+}
+
+.input-small {
+  width: 80px;
+  height: 45px;
+  border-radius: 8px;
+  border: 1px solid var(--light-grayish);
+  background: var(--white);
+}
+
+.input-medium {
+  width: 191px;
+  height: 45px;
+  border-radius: 8px;
+  border: 1px solid var(--light-grayish);
+  background: var(--white);
+}
+
+button[type="submit"] {
+  width: 381px;
+  height: 53px;
+  border-radius: 8px;
+  background: var(--very-dark-violet);
+  color: var(--white);
+  font-size: 18px;
+  line-height: normal;
+}
+
+legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
