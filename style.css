@@ -12,10 +12,6 @@
   --very-dark-violet: hsl(278, 68%, 11%);
 }
 
-/* ::-webkit-inner-spin-button {
-   appearance: none;
-} */
-
 main {
   height: 100vh;
   display: flex;
@@ -46,33 +42,30 @@ fieldset label {
   font-size: 12px;
   letter-spacing: 1px;
   color: var(--very-dark-violet);
+  margin-block-end: 9px;
 }
 
 ::placeholder {
-  color: var(--very-dark-violet, #21092f);
+  color: var(--very-dark-violet);
   font-size: 18px;
   line-height: normal;
   opacity: 0.25;
-  padding-inline-start: 16px;
 }
 
 input {
-   cursor: pointer;
+  padding-inline: 16px;
+  padding-block: 11px;
+  cursor: pointer;
 }
 
-/* input:focus {
-   outline: none;
+input:focus {
+  outline: none;
   border: 1px solid transparent;
-    background-image: linear-gradient(
-    white, white
-  ), linear-gradient(
-    90deg,
-    hsl(249, 99%, 64%),
-    hsl(278, 94%, 30%)
-  );
+  background-image: linear-gradient(white, white),
+    linear-gradient(90deg, hsl(249, 99%, 64%), hsl(278, 94%, 30%));
   background-origin: border-box;
   background-clip: padding-box, border-box;
-} */
+}
 
 .input-flx {
   display: flex;
@@ -125,6 +118,6 @@ legend {
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0,0,0,0);
+  clip: rect(0, 0, 0, 0);
   border: 0;
 }
